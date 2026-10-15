@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LoopBridge result</title>
+<style>
+  body { font-family: sans-serif; width: 360px; margin: 12px; }
+  #result { width: 100%; height: 180px; box-sizing: border-box; }
+  #status { min-height: 2.5em; margin: 8px 0; }
+  button { margin-right: 8px; }
+</style>
+</head>
+<body>
+<h3>LoopBridge result</h3>
+<p id="status">No result fetched yet.</p>
+<textarea id="result" readonly placeholder="Fetched OpenCode response appears here for copying."></textarea>
+<p>
+  <button id="fetch">Fetch result for this tab</button>
+  <button id="copy" disabled>Copy</button>
+</p>
+<p><small>Paste manually into the chat. LoopBridge never inserts or submits text.</small></p>
+<script src="popup.js"></script>
+</body>
+</html>
